@@ -96,9 +96,9 @@ if st.session_state.subjects:
 
     fig, ax = plt.subplots(figsize=(7, 3))
     ax.plot(sem_list, avg_list, marker="o", color="#1a7abf", linewidth=2, markersize=7)
-    ax.set_ylim(5.2, 0.8)
-    ax.set_ylabel("평균 등급")
-    ax.set_xlabel("학기")
+    ax.set_ylim(5.2, 0.8)    
+    ax.set_ylabel("Avg Grade (1=best)")
+    ax.set_xlabel("Semester")
     ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
     ax.grid(axis="y", linestyle="--", alpha=0.5)
     fig.patch.set_facecolor("#f0f8ff")
