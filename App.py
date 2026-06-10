@@ -52,7 +52,9 @@ if st.button("추가"):
             "등급점수": grade_to_point[grade]
         })
         st.session_state.counter += 1
+        st.session_state[f"semester_{st.session_state.counter}"] = semester
         st.rerun()
+
 
 if st.session_state.subjects:
     df = pd.DataFrame(st.session_state.subjects)
